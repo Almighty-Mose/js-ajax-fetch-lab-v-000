@@ -37,7 +37,7 @@ function createIssue() {
   };
   
   fetch(
-  'https://api.github.com/repos/:your_ghname/:your_repo/commits/:sha/comments',
+    repo,
   {
     method: 'POST',
     body: JSON.stringify(postData),
