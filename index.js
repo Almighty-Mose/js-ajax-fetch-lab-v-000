@@ -11,6 +11,7 @@ function forkRepo() {
   const url = `${baseURL}/repos/${repo}/forks`
   //use fetch to fork it!
   fetch(url, {
+    method: 'POST'
     headers: {
       Authorization: `token ${token}`
     }
