@@ -10,7 +10,7 @@ function getToken() {
   })
     .then(res => res.json())
     .then(json => console.log(json));
-  return '';
+  return token;
 }
 
 function forkRepo() {
