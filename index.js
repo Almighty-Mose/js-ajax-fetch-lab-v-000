@@ -36,15 +36,15 @@ function createIssue() {
     body: document.getElementById(body).value
   };
   
-  fetch(
-    repo,
-  {
+  fetch(url, {
     method: 'POST',
     body: JSON.stringify(postData),
     headers: {
-      Authorization: `token ${token}`
+      Authorization: `token ${getToken()}`
     }
-  }
+  })
+    .then(res => res.json())
+    .then(json => getIssues());
 }
 
 function getIssues() {
