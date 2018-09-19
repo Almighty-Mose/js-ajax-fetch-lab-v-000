@@ -4,7 +4,7 @@ function getToken() {
   return '';
 }
 
-const baseURL = 
+const baseURL = 'https://api.github.com';
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
