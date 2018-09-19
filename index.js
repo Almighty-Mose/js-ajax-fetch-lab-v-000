@@ -8,7 +8,7 @@ const baseURL = 'https://api.github.com';
 const user = 'Almighty-Mose';
 
 function forkRepo() {
-  const repo = 'Almighty-Mose/js-ajax-fetch-lab';
+  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = `${baseURL}/repos/${repo}/forks`;
   //use fetch to fork it!
   fetch(url, {
