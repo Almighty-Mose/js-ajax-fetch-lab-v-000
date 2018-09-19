@@ -1,7 +1,7 @@
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return 'db4c49a6cb9b60d78c91ac0f7963b8a517e81bbd';
+  return '';
 }
 
 const baseURL = 'https://api.github.com';
