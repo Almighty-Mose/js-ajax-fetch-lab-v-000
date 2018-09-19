@@ -19,7 +19,7 @@ function forkRepo() {
     .then(res => res.json())
     .then(json => showResults(json));
 }
-}
+
 
 function showResults(json) {
   //use this function to display the results from forking via the API
