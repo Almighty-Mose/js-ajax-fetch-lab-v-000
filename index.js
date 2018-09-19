@@ -32,7 +32,7 @@ function createIssue() {
   const url = `${baseURL}/repos/${repo}/issues`;
   
   const postData = {
-    title: 
+    title: document.getElementById(title).value,
   }
 }
 
