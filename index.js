@@ -10,7 +10,7 @@ function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = `${baseURL}/repos/${repo}/forks`
   //use fetch to fork it!
-  fetch(repo)
+  fetch(url)
     .then(res => res.json())
     .then(json => showResults(json));
 }
