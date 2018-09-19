@@ -10,7 +10,6 @@ const user = 'Almighty-Mose';
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = `${baseURL}/repos/${repo}/forks`;
-  //use fetch to fork it!
   fetch(url, {
     method: 'POST',
     headers: {
@@ -19,6 +18,7 @@ function forkRepo() {
   })
     .then(res => res.json())
     .then(json => showResults(json));
+}
 }
 
 function showResults(json) {
